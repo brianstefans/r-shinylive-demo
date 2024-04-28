@@ -30,7 +30,7 @@ jobs:
       - name: Install packages
         run: |
         
-          Rscript -e 'install.packages("shinlive")'
+          Rscript -e 'install.packages("shinylive")'
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
