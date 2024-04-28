@@ -27,6 +27,11 @@ jobs:
         with:
           cache-version: 1
 
+      - name: Install packages
+        run: |
+        
+          Rscript -e 'install.packages("shinlive")'
+
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
